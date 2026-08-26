@@ -77,14 +77,14 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
                 <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                     <div class="flex items-center space-x-3">
-                        <div class="p-1 bg-white-500/30 rounded-2xl">
-                            <img src="UNIZAR.png" width="60px">
+                        <div class="p-3 bg-emerald-500/30 rounded-2xl border border-emerald-400/40 backdrop-blur-md">
+                            <i data-lucide="qr-code" class="w-8 h-8 text-emerald-200"></i>
                         </div>
                         <div>
                             <h1 class="text-2xl font-extrabold tracking-tight text-white flex items-center gap-2">
-                                Presensi Wisuda <span class="text-emerald-300">Ke-79</span>
+                                Presensi<span class="text-emerald-300">QR</span> Pro
                             </h1>
-                            <p class="text-xs text-emerald-100 font-medium">Universitas Islam Al-Azhar</p>
+                            <p class="text-xs text-emerald-100 font-medium">Sistem Absensi Kehadiran Peserta berbasis QR Code & Data Excel</p>
                         </div>
                     </div>
 
@@ -735,7 +735,7 @@ function doPost(e) {
             document.getElementById('cameraPlaceholder').classList.add('hidden');
             
             html5QrCode = new Html5Qrcode("qr-reader");
-            const config = { fps: 10, qrbox: { width: 220, height: 220 } };
+            const config = { fps: 10,transform: scaleX(-1) qrbox: { width: 220, height: 220 } };
 
             html5QrCode.start(
                 { facingMode: "environment" },
@@ -1326,7 +1326,7 @@ function doPost(e) {
             ctx.fillStyle = '#ffffff';
             ctx.font = 'bold 18px "Plus Jakarta Sans", sans-serif';
             ctx.textAlign = 'center';
-            ctx.fillText(`FAKULTAS: ${fakultas.toUpperCase()}', 200, 56);
+            ctx.fillText(`FAKULTAS: ${fakultas.toUpperCase()}`, 200, 56);
 
             // ID & Name
             ctx.fillStyle = '#1e293b';
