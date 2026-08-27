@@ -1317,16 +1317,16 @@ function doPost(e) {
             ctx.fill();
 
             // Header Banner
-            ctx.fillStyle = '#065f46';
-            ctx.beginPath();
-            ctx.roundRect(20, 20, 360, 60, 16);
-            ctx.fill();
+            // ctx.fillStyle = '#065f46';
+            // ctx.beginPath();
+            // ctx.roundRect(20, 20, 360, 60, 16);
+            // ctx.fill();
 
             // Faculty Text on Card
             ctx.fillStyle = '#ffffff';
             ctx.font = 'bold 18px "Plus Jakarta Sans", sans-serif';
             ctx.textAlign = 'center';
-            ctx.fillText(`FAKULTAS: ${fakultas.toUpperCase()}`, 200, 56);
+            ctx.fillText(` ${fakultas.toUpperCase()}`, 200, 56);
 
             // ID & Name
             ctx.fillStyle = '#1e293b';
