@@ -1326,7 +1326,7 @@ function doPost(e) {
             ctx.fillStyle = '#ffffff';
             ctx.font = 'bold 18px "Plus Jakarta Sans", sans-serif';
             ctx.textAlign = 'center';
-            ctx.fillText(` ${fakultas.toUpperCase()}`, 200, 56);
+            ctx.fillText(`FAKULTAS: ${fakultas.toUpperCase()}`, 200, 56);
 
             // ID & Name
             ctx.fillStyle = '#1e293b';
@@ -1338,9 +1338,9 @@ function doPost(e) {
             ctx.fillText(`ID PESERTA: ${id}`, 200, 410);
 
             // Footer Branding
-            // ctx.fillStyle = '#94a3b8';
-            // ctx.font = '12px "Plus Jakarta Sans", sans-serif';
-            // ctx.fillText();
+            ctx.fillStyle = '#94a3b8';
+            ctx.font = '12px "Plus Jakarta Sans", sans-serif';
+            ctx.fillText(``);
 
             // Temporary QR Code element
             const tempDiv = document.createElement('div');
